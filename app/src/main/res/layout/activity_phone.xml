@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:id="@+id/rtLytTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:outAnimation="@anim/left_in"
+            android:inAnimation="@anim/right_out"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:src="@drawable/login" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:src="@drawable/sack" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:src="@drawable/lunbotu2" />
+        </ViewFlipper>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_info"
+        android:orientation="vertical">
+
+        <!--            <ImageView-->
+        <!--                    android:src="@drawable/sack"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent">-->
+
+        <!--            </ImageView>-->
+
+
+        <!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rtLytMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="30dp"
+            >
+
+            <EditText
+                android:id="@+id/edt_UserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/editext_shape"
+                android:hint="请输入手机号"
+                android:inputType="text">
+
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rtLyMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rtLytMiddle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/editext_shape"
+                android:hint="请输入验证码"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rtLyMiddle"
+            android:layout_margin="70dp"
+            android:text="登录"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:textSize="24sp">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btn_Login2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="密码登录"
+                android:background="@drawable/button_shape"
+                android:textColor="#ffffff"
+                android:textSize="18sp">
+
+            </Button>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
